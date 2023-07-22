@@ -9,10 +9,11 @@ package com.leetcode.dongtaiguihua;
  */
 public class Leetcode1049 {
     public static void main(String[] args) {
-        int[] stones=new int[]{2,7,4,1,8,1};
+        int[] stones = new int[]{2, 7, 4, 1, 8, 1};
         System.out.println(lastStoneWeightII(stones));
     }
-    public static int lastStoneWeightII(int[] stones) {
+
+        public static int lastStoneWeightII(int[] stones) {
         int sum=0;
         for(int i=0;i<stones.length;i++){
             sum+=stones[i];
@@ -26,4 +27,5 @@ public class Leetcode1049 {
         }
         return sum-2*dp[target];
     }
+
 }

@@ -26,10 +26,13 @@ public class Leetcode139 {
         HashSet<String> set=new HashSet<>(wordDict);
         boolean[] valid=new boolean[s.length()+1];
         valid[0]=true;
+        // 组合先遍历物品
+        // 排列先遍历背包
         for(int i=1;i<=s.length();i++){
-            for(int j=0;j<i&&!valid[i];j++){
+            for(int j=0;j<i;j++){
                 if(set.contains(s.substring(j,i))&&valid[j]){
                     valid[i]=true;
+                    break;
                 }
             }
         }
