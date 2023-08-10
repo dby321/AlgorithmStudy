@@ -5,10 +5,8 @@ package com.huaweijishi;
  * @version 1.0
  * @project AlgorithmStudy
  * @description
- * @date 2023/8/3 20:04:32
+ * @date 2023/8/5 14:31:21
  */
-public class HJ53 {
-    public static void main(String[] args) {
-
-    }
+public class HJ66 {
+   
 }
