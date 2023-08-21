@@ -10,22 +10,6 @@ import java.util.List;
  * 1. 有时需要移动到下一个位置，有时不需要
  * @date 2023/5/29 12:15:05
  */
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}
 
 public class Leetcode203 {
     public static void main(String[] args) {
@@ -44,6 +28,23 @@ public class Leetcode203 {
             start=start.next;
         }
     }
+    public static class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode() {
+        }
+
+        ListNode(int val) {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
+    }
+
     public static ListNode removeElements(ListNode head, int val){
         ListNode dummy=new ListNode(-1);
         dummy.next=head;

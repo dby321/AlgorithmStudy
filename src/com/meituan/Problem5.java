@@ -1,0 +1,12 @@
+package com.meituan;
+
+import java.util.Scanner;
+
+public class Problem5 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        while(sc.hasNext()){
+
+        }
+    }
+}
