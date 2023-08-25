@@ -51,6 +51,7 @@ public  class Problem1 {
             right.next=null;
             sort(left,newList);
             left=new ListNode(-1);
+            right=left;
             left.next=next;
             right.next=next;
         }
