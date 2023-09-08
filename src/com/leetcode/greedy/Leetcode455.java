@@ -20,15 +20,12 @@ public class Leetcode455 {
     public static int findContentChildren(int[] g, int[] s) {
         Arrays.sort(g);
         Arrays.sort(s);
-        int count=0;
         int start=0;
-        for(int i=0;i<s.length;i++){
-            for(int j=start;j<g.length;j++){
-                if(s[i]>=g[j]){
-                    count++;
-                    start++;
-                    break;
-                }
+        int count=0;
+        for(int i=0;i<s.length&&start<g.length;i++){
+            if(s[i]>=g[start]){
+                start++;
+                count++;
             }
         }
         return count;
