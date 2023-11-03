@@ -17,6 +17,7 @@ public class Main {
 //        bubbleSort(arr);
         quickSort(arr,0,arr.length-1);
         System.out.println(Arrays.toString(arr));
+        
     }
     public static void shuffle(int[] arr){
         if(arr==null||arr.length==0||arr.length==1){
@@ -55,18 +56,18 @@ public class Main {
         }
         int left=start;
         int right=end;
-        int temp=arr[left];
+        int temp=left;
         while(left<right){
-            while(left<right&&arr[right]>=temp){
+            while(left<right&&arr[right]>=arr[temp]){
                 right--;
             }
-            arr[left]=arr[right];
-            while(left<right&&arr[left]<=temp){
+
+            while(left<right&&arr[left]<=arr[temp]){
                 left++;
             }
-            arr[right]=arr[left];
+            swap(arr,left,right);
         }
-        arr[left]=temp;
+        swap(arr,left,temp);
         quickSort(arr,start,left-1);
         quickSort(arr,left+1,end);
     }

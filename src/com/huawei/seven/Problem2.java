@@ -89,6 +89,7 @@ public class Problem2 {
                         System.out.print(" "+res[i]);
                     }
                 }
+
             }
             System.out.print("]");
         }
